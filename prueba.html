@@ -10,6 +10,10 @@
         font-family: 'Varela Round', sans-serif;
         font-size: 18px;
 		color: #213658;
+		display: table-cell;
+		vertical-align:top;
+		padding-bottom: 3px;
+		padding-top: 24px;
       }	
 	  #info {
         font-family: 'Raleway', sans-serif;
@@ -17,18 +21,27 @@
 		color: #213658;
 		text-align:left;
 		text-decoration: none;
-		
+		padding-bottom:3px;
       }	
+	  #info_a {
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+		color: #213658;
+		text-align:left;
+		text-decoration: none;
+		padding-bottom:3px;
+      }	
+	  
 	  #info_icon {
 		width:100%;
 	  }
 	/* DivTable.com */
 .divTable{
 	display: table;
+	
 }
 .divTableRow {
 	display: table-row;
-	
 }
 .divTableHeading {
 	background-color: #EEE;
@@ -38,7 +51,23 @@
 	display: table-cell;
 	vertical-align:top;
 	padding-bottom: -1px;
-	
+	padding-left: 20px;
+	table-layout:fixed;
+
+}
+.divTableCellInfo {
+	display: table-cell;
+	vertical-align:top;
+	padding-top: 2px;
+	padding-left: 5px;
+	table-layout:fixed;
+
+}
+.divName {
+	display: table-cell;
+	vertical-align:top;
+	padding-left: 12px;
+	padding-top: 25px;
 }
 .divTableHeading {
 	background-color: #EEE;
@@ -56,10 +85,8 @@
 	display: table-row-group;
 }
 .divIcon {
-	height: 20px;
-	width: 20px;
-	border:1px solid black;
-
+	height: 15px;
+	width: 15px;
 }
 
     </style>
@@ -68,30 +95,31 @@
 <div class="divTable" width="650px">
 <div class="divTableBody">
 <div class="divTableRow">
-<div class="logo" style="width:204px; display:table-cell; vertical-align:middle; text-align:center"><img  src="logo.jpg"  alt="" /></div>
-<div class="divTableCell" style="display:table-cell; vertical-align:middle; text-align:center"><img src="vertical-line.jpg" alt="" /></div>
+<div class="logo" style="width:204px; display:table-cell; vertical-align:middle; text-align:center"><img style="width:80%" src="logo.jpg"  alt="" /></div>
+<div class="vertical" style="display:table-cell; vertical-align:middle; text-align:center"><img src="vertical-line.jpg" alt="" /></div>
 <div class="divTableCell">
-<p id="name">Orri Avraham <span style="color: #d5eaea;">| CEO</span></p>
-<div class="divTable">
+<span id="name">Orri Avraham <span style="color: #d5eaea;">| CEO</span></span>
+<div class="divTable" style="width:316px;">
 <div class="divTableBody">
 <div class="divTableRow">
 <div class="divIcon"><img src="phone.jpg" id="info_icon" alt="" /></div>
-<div class="divTableCell" id="info">+972-54-424-0556</div>
+<div class="divTableCellInfo" id="info">+972-54-424-0556</div>
 </div>
 <div class="divTableRow">
 <div class="divIcon"><img src="mail.jpg" id="info_icon" alt="" /></div>
-<div class="divTableCell" id="info">orri@wishingwell.co.il</div>
-<div class="divIcon"><img src="website.jpg" id="info_icon" alt="" /></div>
-<div class="divTableCell" id="info">www.wishingwell.co.il</div>
+<div class="divTableCellInfo" id="info" style="width:135px">orri@wishingwell.co.il</div>
+<div class="divIcon"><img src="website.jpg"  id="info_icon" alt="" /></div>
+<div class="divTableCellInfo" id="info" >www.wishingwell.co.il</div>
+</div>
+
+</div>
 </div>
 <div class="divTableRow">
 <div class="divIcon"><img src="location.jpg" id="info_icon" alt="" /></div>
-<div class="divTableCell" id="info">Beit Alliance, Jerusalem, Israel</div>
+<div class="divTableCellInfo" id="info" style="padding-left:11px;">Beit Alliance, Jerusalem, Israel</div>
 </div>
 </div>
-</div>
-</div>
-<div class="divTableCell" style="border:1px solid; display:table-cell;padding-left:14px" ><img src="balloons.jpg" alt="" /></div>
+<div class="divTableCell" style=" display:table-cell;padding-left:14px" ><img src="balloons.jpg" alt="" /></div>
 </div>
 </div>
 </div>
