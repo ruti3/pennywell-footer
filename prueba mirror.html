@@ -44,6 +44,7 @@
 	display: table-row;
 	font-size: 0;
 	direction:rtl;
+	
 }
 .divTableHeading {
 	background-color: #EEE;
@@ -60,7 +61,7 @@
 }
 .divTableCellInfo {
 	display: table-cell;
-	vertical-align:top;
+	vertical-align:bottom;
 	padding-top: 2px;
 	padding-right: 5px;
 	table-layout:fixed;
@@ -98,7 +99,8 @@
 	height: 15px;
 	width: 15px;
 	font-size:0px;
-
+	
+	
 }
 
     </style>
@@ -121,11 +123,12 @@
 <div class="divIcon"><img src="phone.jpg" id="info_icon" alt="" /></div>
 <div class="divTableCellInfo" style="direction:ltr;"id="info">+972-54-424-0556</div>
 </div>
-<div class="divTableRow">
-<div class="divIcon"><img src="mail.jpg" id="info_icon" alt="" /></div>
+<div class="divTableRow" >
+<div class="divIcon" ><img src="mail.jpg" id="info_icon" alt="" /></div>
 <div class="divTableCellInfo" id="info" style="width:135px">orri@wishingwell.co.il</div>
-<div class="divIcon"><img src="website.jpg"  id="info_icon" style="vertical-align:center;" alt="" /></div>
+<div class="divIcon" style="position:relative;top:1px;"><img src="website.jpg"  id="info_icon" alt="" /></div>
 <div class="divTableCellInfo" id="info" >www.wishingwell.co.il</div>
+
 </div>
 
 </div>
@@ -144,7 +147,7 @@
 </div>
 <!-- Horizontal line -->
 <div class="divTable" style="width:630px;">
-<div class="divTableRow" style="font-size:0px;display:table-cell;column-span:3;"><img src="horizontal-line.jpg" width="650px" height="15px" alt="" /></div>
+<div class="divTableRow" style="column-span:3;"><img src="horizontal-line.jpg" width="650px" height="15px" alt="" /></div>
 </div>
 </div>
 </body>
